@@ -1,0 +1,1577 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Pipe",
+    "onProperty" : "ssn:hasProperty"
+  }, {
+    "@id" : "_:b10",
+    "@type" : "owl:Restriction",
+    "onProperty" : "sosa:hosts",
+    "someValuesFrom" : "ssn:System"
+  }, {
+    "@id" : "_:b11",
+    "@type" : "owl:Restriction",
+    "onProperty" : "sosa:hosts",
+    "someValuesFrom" : "sosa:FeatureOfInterest"
+  }, {
+    "@id" : "_:b12",
+    "inverseOf" : "sosa:observes"
+  }, {
+    "@id" : "_:b13",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Location",
+    "onProperty" : "decas:has_location"
+  }, {
+    "@id" : "_:b14",
+    "inverseOf" : "sosa:observedProperty"
+  }, {
+    "@id" : "_:b15",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "sosa:madeByActuator"
+  }, {
+    "@id" : "_:b16",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "sosa:resultTime"
+  }, {
+    "@id" : "_:b17",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "sosa:hasFeatureOfInterest"
+  }, {
+    "@id" : "_:b18",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:Actuator",
+    "onProperty" : "sosa:madeByActuator"
+  }, {
+    "@id" : "_:b19",
+    "@type" : "owl:Restriction",
+    "minCardinality" : "1",
+    "onProperty" : "sosa:actsOnProperty"
+  }, {
+    "@id" : "_:b20",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Material_Property",
+    "onProperty" : "sosa:observedProperty"
+  }, {
+    "@id" : "_:b21",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Material_Observation",
+    "onProperty" : "sosa:madeObservation"
+  }, {
+    "@id" : "_:b22",
+    "@type" : "owl:Restriction",
+    "onProperty" : "ssn:isPropertyOf",
+    "someValuesFrom" : "decas:Pump"
+  }, {
+    "@id" : "_:b23",
+    "@type" : "owl:Class",
+    "intersectionOf" : {
+      "@list" : [ "sosa:Actuator", "_:b3" ]
+    }
+  }, {
+    "@id" : "_:b24",
+    "@type" : "owl:Restriction",
+    "onProperty" : "decas:is_location_of",
+    "someValuesFrom" : "sosa:Platform"
+  }, {
+    "@id" : "_:b25",
+    "@type" : "owl:Restriction",
+    "onProperty" : "decas:is_location_of",
+    "someValuesFrom" : "ssn:System"
+  }, {
+    "@id" : "_:b26",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Temperature",
+    "onProperty" : "ssn:hasProperty"
+  }, {
+    "@id" : "_:b27",
+    "inverseOf" : "ssn:isPropertyOf"
+  }, {
+    "@id" : "_:b28",
+    "inverseOf" : "sosa:madeByActuator"
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Switch",
+    "onProperty" : "ssn:forProperty"
+  }, {
+    "@id" : "_:b31",
+    "@type" : "owl:Class",
+    "intersectionOf" : {
+      "@list" : [ "decas:Material_Sensor", "_:b37" ]
+    }
+  }, {
+    "@id" : "_:b32",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:FeatureOfInterest",
+    "onProperty" : "ssn:isPropertyOf"
+  }, {
+    "@id" : "_:b34",
+    "@type" : "owl:Restriction",
+    "onProperty" : "sosa:hosts",
+    "someValuesFrom" : "decas:Material_Container"
+  }, {
+    "@id" : "_:b35",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:ActuatableProperty",
+    "onProperty" : "ssn:forProperty"
+  }, {
+    "@id" : "_:b36",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:Actuation",
+    "onProperty" : "sosa:madeActuation"
+  }, {
+    "@id" : "_:b37",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Temperature",
+    "onProperty" : "sosa:observes"
+  }, {
+    "@id" : "_:b38",
+    "@type" : "owl:Restriction",
+    "onClass" : "decas:Material_Property",
+    "onProperty" : "sosa:observedProperty",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b39",
+    "@type" : "owl:Class",
+    "intersectionOf" : {
+      "@list" : [ "sosa:Observation", "_:b67" ]
+    }
+  }, {
+    "@id" : "_:b4",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:FeatureOfInterest",
+    "onProperty" : "sosa:hasFeatureOfInterest"
+  }, {
+    "@id" : "_:b40",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Processing_Material",
+    "onProperty" : "sosa:hasFeatureOfInterest"
+  }, {
+    "@id" : "_:b41",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "sosa:madeBySensor"
+  }, {
+    "@id" : "_:b42",
+    "inverseOf" : "decas:is_location_of"
+  }, {
+    "@id" : "_:b43",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Switch_Actuator",
+    "onProperty" : "sosa:isActedOnBy"
+  }, {
+    "@id" : "_:b45",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Temperature_Sensor",
+    "onProperty" : "ssn:hasProperty"
+  }, {
+    "@id" : "_:b46",
+    "inverseOf" : "sosa:isFeatureOfInterestOf"
+  }, {
+    "@id" : "_:b47",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:Platform",
+    "onProperty" : "sosa:isHostedBy"
+  }, {
+    "@id" : "_:b49",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Switch",
+    "onProperty" : "ssn:hasProperty"
+  }, {
+    "@id" : "_:b5",
+    "inverseOf" : "sosa:madeObservation"
+  }, {
+    "@id" : "_:b50",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Material",
+    "onProperty" : "ssn:hasProperty"
+  }, {
+    "@id" : "_:b51",
+    "@type" : "owl:Class",
+    "intersectionOf" : {
+      "@list" : [ "sosa:Platform", "_:b34" ]
+    }
+  }, {
+    "@id" : "_:b52",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:ObservableProperty",
+    "onProperty" : "sosa:observes"
+  }, {
+    "@id" : "_:b53",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:Observation",
+    "onProperty" : "sosa:madeObservation"
+  }, {
+    "@id" : "_:b54",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "ssn:Property",
+    "onProperty" : "ssn:hasProperty"
+  }, {
+    "@id" : "_:b55",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Pump",
+    "onProperty" : "ssn:hasProperty"
+  }, {
+    "@id" : "_:b56",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "decas:Material" ]
+    }
+  }, {
+    "@id" : "_:b58",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:ObservableProperty",
+    "onProperty" : "sosa:observedProperty"
+  }, {
+    "@id" : "_:b59",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Temperature_Sensor",
+    "onProperty" : "sosa:isObservedBy"
+  }, {
+    "@id" : "_:b6",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:FeatureOfInterest",
+    "onProperty" : "sosa:hasFeatureOfInterest"
+  }, {
+    "@id" : "_:b61",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "sosa:resultTime"
+  }, {
+    "@id" : "_:b62",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "sosa:observedProperty"
+  }, {
+    "@id" : "_:b63",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Material",
+    "onProperty" : "ssn:hasProperty"
+  }, {
+    "@id" : "_:b64",
+    "inverseOf" : "sosa:isActedOnBy"
+  }, {
+    "@id" : "_:b65",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:Sensor",
+    "onProperty" : "sosa:madeBySensor"
+  }, {
+    "@id" : "_:b66",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:Observation",
+    "onProperty" : "_:b14"
+  }, {
+    "@id" : "_:b67",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "_:b56",
+    "onProperty" : "sosa:hasFeatureOfInterest"
+  }, {
+    "@id" : "_:b68",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "sosa:hasFeatureOfInterest"
+  }, {
+    "@id" : "_:b69",
+    "@type" : "owl:Restriction",
+    "minCardinality" : "1",
+    "onProperty" : "ssn:hasProperty"
+  }, {
+    "@id" : "_:b7",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:ActuatableProperty",
+    "onProperty" : "sosa:actsOnProperty"
+  }, {
+    "@id" : "_:b70",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:Actuation",
+    "onProperty" : "sosa:isActedOnBy"
+  }, {
+    "@id" : "_:b71",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "sosa:Sensor",
+    "onProperty" : "sosa:isObservedBy"
+  }, {
+    "@id" : "_:b8",
+    "inverseOf" : "sosa:isHostedBy"
+  }, {
+    "@id" : "_:b9",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "decas:Location",
+    "onProperty" : "decas:has_location"
+  }, {
+    "@id" : "terms:created",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "terms:description",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "terms:title",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "vann:preferredNamespacePrefix",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "schema:domainIncludes",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "schema:rangeIncludes",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "swrla:isRuleEnabled",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "./",
+    "@type" : "owl:Ontology",
+    "created" : "2023-11-05",
+    "description" : {
+      "@language" : "en",
+      "@value" : "This ontology models the Decentralized Context-Aware System (DeCAS) entity relation. It provides a range of sensor and actuator classes that reflect a manufacturer's environment.\n\nThis ontology is based on the SSN/SOSA IoT sensor network ontologies."
+    },
+    "title" : {
+      "@language" : "en",
+      "@value" : "DeCAS Ontology"
+    },
+    "preferredNamespacePrefix" : "decas"
+  }, {
+    "@id" : "decas:DS18B20",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A sensor to measure a liquid temperature."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "DS18B20"
+    },
+    "subClassOf" : "decas:Temperature_Sensor",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A sensor to measure a liquid temperature."
+    }
+  }, {
+    "@id" : "decas:Flash_Mixer_Equipment",
+    "@type" : "owl:Class",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Flash Mixer"
+    },
+    "equivalentClass" : "_:b51"
+  }, {
+    "@id" : "decas:Location",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Location where either a Sensor, Actuator or Platform (which hosts Sensors and Actuators) can be found."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Location"
+    },
+    "subClassOf" : [ "_:b25", "_:b24" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Location where either a Sensor, Actuator or Platform (which hosts Sensors and Actuators) can be found."
+    }
+  }, {
+    "@id" : "decas:Material",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A substance made up of various types of particles that occupy physical space and have inertia."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Material"
+    },
+    "subClassOf" : [ "_:b26", "sosa:FeatureOfInterest" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A substance made up of various types of particles that occupy physical space and have inertia."
+    }
+  }, {
+    "@id" : "decas:Material_Container",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An equipment in which the mixing materials process will happen inside it."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Material Container"
+    },
+    "subClassOf" : [ "_:b45", "_:b55", "_:b0", "_:b63", "sosa:FeatureOfInterest" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An equipment in which the mixing materials process will happen inside it."
+    }
+  }, {
+    "@id" : "decas:Material_Observation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Observations relating to a material properties in an area."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Material Observation"
+    },
+    "equivalentClass" : [ "_:b38", "_:b39" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Observations relating to a material properties in an area."
+    }
+  }, {
+    "@id" : "decas:Material_Property",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An observable property found in a material."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Material Property"
+    },
+    "subClassOf" : "sosa:ObservableProperty",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An observable property found in a material."
+    }
+  }, {
+    "@id" : "decas:Material_Sensor",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A type of sensor is used to measure materials conditions. Examples could include humidity, temperature or pollution sensors."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Material Sensor"
+    },
+    "subClassOf" : [ "_:b20", "_:b21", "sosa:Sensor" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A type of sensor used to measure environmental conditions. Examples could include humidity, temperature or pollution sensors."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "A sensor used to measure the temperature of the atmosphere in a room."
+    }
+  }, {
+    "@id" : "decas:Pipe",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Equipment to transfer the materials, predominantly liquid, to another place."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Pipe"
+    },
+    "subClassOf" : [ "_:b50", "sosa:FeatureOfInterest" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Equipment to transfer the materials, predominantly liquid, to another place."
+    }
+  }, {
+    "@id" : "decas:Processing_Material",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A material is produced during the production process."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Processing Material"
+    },
+    "subClassOf" : "decas:Material",
+    "disjointWith" : [ "decas:Raw_Material", "decas:Product" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A material is used to produce the final product."
+    }
+  }, {
+    "@id" : "decas:Product",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A material is used to produce the final product."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Product"
+    },
+    "subClassOf" : "decas:Material",
+    "disjointWith" : "decas:Raw_Material",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A material is used to produce the final product."
+    }
+  }, {
+    "@id" : "decas:Pump",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An electrical device is used to transfer a material to another place."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Pump"
+    },
+    "subClassOf" : [ "_:b49", "sosa:FeatureOfInterest" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An electrical device is used to transfer a material to another place."
+    }
+  }, {
+    "@id" : "decas:Pump_Actuation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Actuation events which occur on a pump."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Pump Actuation"
+    },
+    "subClassOf" : [ "_:b40", "sosa:Actuation" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Actuation events which occur on a pump."
+    }
+  }, {
+    "@id" : "decas:Raw_Material",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A material is used to produce the final product."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Raw Material"
+    },
+    "subClassOf" : "decas:Material",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A material is used to produce the final product."
+    }
+  }, {
+    "@id" : "decas:Switch",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An actuation property relating to the state or level of a switchable actuator."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Switch"
+    },
+    "subClassOf" : [ "_:b43", "_:b22", "sosa:ActuatableProperty" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An actuation property relating to the state or level of a switchable actuator."
+    }
+  }, {
+    "@id" : "decas:Switch_Actuator",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An actuator is used to change the state of a switchable property."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Switch Actuator"
+    },
+    "equivalentClass" : "_:b23",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An actuator is used to change the state of a switchable property."
+    }
+  }, {
+    "@id" : "decas:Temperature",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Temperature is a measure of the infrared energy held by a feature of interest."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Temperature"
+    },
+    "subClassOf" : [ "_:b59", "decas:Material_Property" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Temperature is a measure of the infrared energy held by a feature of interest."
+    }
+  }, {
+    "@id" : "decas:Temperature_Sensor",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A sensor that detects the temperature of a material."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Temperature Sensor"
+    },
+    "equivalentClass" : "_:b31",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A sensor that detects the temperature of a material."
+    }
+  }, {
+    "@id" : "decas:has_alert",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Indicates whether a sensor alert has been triggered by a sensor reading."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "has alert"
+    },
+    "range" : "xsd:boolean",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Indicates whether a sensor alert has been triggered by a sensor reading."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "If the temperature level rises above an acceptable level, the sensor or sensor host may issue an alert status to inform the user of the problem."
+    }
+  }, {
+    "@id" : "decas:has_limit",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Allowed limit of a Sensor reading before an alert should be triggered."
+    },
+    "domain" : "sosa:Sensor",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has limit"
+    },
+    "range" : "xsd:integer",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Allowed limit of a Sensor reading before an alert should be triggered."
+    }
+  }, {
+    "@id" : "decas:has_location",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:AsymmetricProperty", "owl:FunctionalProperty", "owl:ObjectProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuation or Observation and the Location in which it occurred."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "has location"
+    },
+    "range" : "decas:Location",
+    "equivalentProperty" : "_:b42",
+    "inverseOf" : "decas:is_location_of",
+    "propertyDisjointWith" : "decas:is_located_between",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuation or Observation and the Location in which it occurred."
+    }
+  }, {
+    "@id" : "decas:has_on_state",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The state of an actuation event which operates on a feature of interest Switch property."
+    },
+    "domain" : "sosa:Actuation",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has on state"
+    },
+    "range" : "xsd:boolean",
+    "propertyDisjointWith" : "decas:has_open_state",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The state of an actuation event which operates on a feature of interest Switch property."
+    }
+  }, {
+    "@id" : "decas:has_open_state",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The state of an actuation event which operates on a feature of interest Position property."
+    },
+    "domain" : "sosa:Actuation",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has open state"
+    },
+    "range" : "xsd:boolean",
+    "example" : {
+      "@language" : "en",
+      "@value" : "The state of an actuation event which operates on a feature of interest Position property."
+    }
+  }, {
+    "@id" : "decas:has_power",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The power state of a platform. Intended to be linked to systems hosting individuals with a Socket feature of interest."
+    },
+    "domain" : "sosa:Platform",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has power"
+    },
+    "range" : "xsd:boolean",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The power state of a platform. Intended to be linked to systems hosting individuals with a Socket feature of interest."
+    }
+  }, {
+    "@id" : "decas:has_setting",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Numeric setting value applicable to an actuation."
+    },
+    "domain" : "sosa:Actuation",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has setting"
+    },
+    "range" : "xsd:integer",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Numeric setting value applicable to an actuation."
+    }
+  }, {
+    "@id" : "decas:has_target",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The target value of a sensor within the system."
+    },
+    "domain" : "ssn:System",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has target"
+    },
+    "range" : "xsd:integer",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The target value of a sensor within the system."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The target temperature setting of a heating system, below which the heating system will be activated."
+    }
+  }, {
+    "@id" : "decas:is_active",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The active state of a Platform. Intended to be linked to systems which have a switchable state."
+    },
+    "domain" : "sosa:Platform",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is active"
+    },
+    "range" : "xsd:boolean",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The active state of a Platform. Intended to be linked to systems which have a switchable state."
+    }
+  }, {
+    "@id" : "decas:is_located_between",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:AsymmetricProperty", "owl:ObjectProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation from an Actuation or Observation to the two Location individuals it connects."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "is located between"
+    },
+    "range" : "decas:Location",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation from an Actuation or Observation to the two Location individuals it connects."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "A door connecting two rooms would have two 'is located between' properties, defining the two rooms connected by the door."
+    }
+  }, {
+    "@id" : "decas:is_location_of",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:AsymmetricProperty", "owl:InverseFunctionalProperty", "owl:ObjectProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Location and the Actuation or Observation that occurred there."
+    },
+    "domain" : "decas:Location",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is location of"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Location and the Actuation or Observation that occurred there."
+    }
+  }, {
+    "@id" : "decas:is_on",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The state of a feature of interest Switch property or Platform."
+    },
+    "domain" : "decas:Switch_Actuator",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is on"
+    },
+    "range" : "xsd:boolean",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The state of a feature of interest Switch property or Platform."
+    }
+  }, {
+    "@id" : "xsd:date",
+    "@type" : "rdfs:Datatype"
+  }, {
+    "@id" : "skos:definition",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:example",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:note",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "sosa:ActuatableProperty",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An actuatable quality (property, characteristic) of a FeatureOfInterest."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Actuatable Property"
+    },
+    "subClassOf" : [ "_:b70", "ssn:Property" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An actuatable quality (property, characteristic) of a FeatureOfInterest."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty."
+    }
+  }, {
+    "@id" : "sosa:Actuation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An Actuation carries out an (Actuation) Procedure to change the state of the world using an Actuator."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Actuation"
+    },
+    "subClassOf" : [ "_:b15", "_:b4", "_:b16", "_:b7", "_:b17", "_:b18", "_:b19" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An Actuation carries out an (Actuation) Procedure to change the state of the world using an Actuator."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The activity of automatically closing a window if the temperature in a room drops below 20 degree Celsius. The activity is the Actuation and the device that closes the window is the Actuator. The Procedure is the rule, plan, or specification that defines the conditions that triggers the Actuation, here a drop in temperature. "
+    }
+  }, {
+    "@id" : "sosa:Actuator",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Actuator"
+    },
+    "subClassOf" : [ "_:b35", "ssn:System", "_:b36" ],
+    "disjointWith" : "sosa:Sensor",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "A window actuator for automatic window control, i.e., opening or closing the window."
+    }
+  }, {
+    "@id" : "sosa:FeatureOfInterest",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Feature Of Interest"
+    },
+    "subClassOf" : [ "_:b69", "_:b54" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."
+    }
+  }, {
+    "@id" : "sosa:ObservableProperty",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An observable quality (property, characteristic) of a FeatureOfInterest."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Observable Property"
+    },
+    "subClassOf" : [ "_:b66", "_:b71", "ssn:Property" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An observable quality (property, characteristic) of a FeatureOfInterest."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted."
+    }
+  }, {
+    "@id" : "sosa:Observation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Observation"
+    },
+    "subClassOf" : [ "_:b41", "_:b6", "_:b68", "_:b62", "_:b61", "_:b58", "_:b65" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake."
+    }
+  }, {
+    "@id" : "sosa:Platform",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Platform"
+    },
+    "subClassOf" : [ "_:b9", "_:b10", "_:b11" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."
+    }
+  }, {
+    "@id" : "sosa:Result",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The Result of an Observation, Actuation, or act of Sampling. To store an observation's simple result value one can use the hasSimpleResult property."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Result"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The Result of an Observation, Actuation, or act of Sampling. To store an observation's simple result value one can use the hasSimpleResult property."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The value 20 as the height of a certain tree together with the unit, e.g., Meter."
+    }
+  }, {
+    "@id" : "sosa:Sensor",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Sensor"
+    },
+    "subClassOf" : [ "_:b52", "_:b53", "ssn:System" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."
+    }
+  }, {
+    "@id" : "sosa:actsOnProperty",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:ObjectProperty", "owl:AsymmetricProperty" ],
+    "domainIncludes" : "sosa:Actuation",
+    "rangeIncludes" : "sosa:ActuatableProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuation and the property of a FeatureOfInterest it is acting upon."
+    },
+    "domain" : "sosa:Actuation",
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "acts on property"
+    },
+    "range" : "sosa:ActuatableProperty",
+    "equivalentProperty" : "_:b64",
+    "inverseOf" : "sosa:isActedOnBy",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuation and the property of a FeatureOfInterest it is acting upon."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. "
+    }
+  }, {
+    "@id" : "sosa:hasFeatureOfInterest",
+    "@type" : [ "owl:AsymmetricProperty", "owl:IrreflexiveProperty", "owl:ObjectProperty" ],
+    "domainIncludes" : [ "sosa:Observation", "sosa:Actuation" ],
+    "rangeIncludes" : "sosa:FeatureOfInterest",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has feature of interest"
+    },
+    "range" : "sosa:FeatureOfInterest",
+    "equivalentProperty" : "_:b46",
+    "inverseOf" : "sosa:isFeatureOfInterestOf",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight."
+    }
+  }, {
+    "@id" : "sosa:hasSimpleResult",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "domainIncludes" : [ "sosa:Observation", "sosa:Actuation" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The simple value of an Observation or Actuation or act of Sampling."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has simple result"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The simple value of an Observation or Actuation or act of Sampling."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "For instance, the values 23 or true."
+    }
+  }, {
+    "@id" : "sosa:hosts",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:ObjectProperty", "owl:AsymmetricProperty", "owl:InverseFunctionalProperty" ],
+    "domainIncludes" : "sosa:Platform",
+    "rangeIncludes" : [ "sosa:Platform", "sosa:Actuator", "sosa:Sensor" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+    },
+    "domain" : "sosa:Platform",
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "hosts"
+    },
+    "equivalentProperty" : "_:b8",
+    "inverseOf" : "sosa:isHostedBy",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+    }
+  }, {
+    "@id" : "sosa:isActedOnBy",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:AsymmetricProperty", "owl:ObjectProperty" ],
+    "domainIncludes" : "sosa:ActuatableProperty",
+    "rangeIncludes" : "sosa:Actuation",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an ActuatableProperty of a FeatureOfInterest and an Actuation changing its state."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is acted on by"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an ActuatableProperty of a FeatureOfInterest and an Actuation changing its state."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. "
+    }
+  }, {
+    "@id" : "sosa:isFeatureOfInterestOf",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:ObjectProperty", "owl:AsymmetricProperty" ],
+    "domainIncludes" : "sosa:FeatureOfInterest",
+    "rangeIncludes" : [ "sosa:Actuation", "sosa:Observation" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is feature of interest of"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."
+    }
+  }, {
+    "@id" : "sosa:isHostedBy",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:FunctionalProperty", "owl:ObjectProperty", "owl:AsymmetricProperty" ],
+    "domainIncludes" : [ "sosa:Platform", "sosa:Sensor", "sosa:Actuator" ],
+    "rangeIncludes" : "sosa:Platform",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is hosted by"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
+    }
+  }, {
+    "@id" : "sosa:isObservedBy",
+    "@type" : [ "owl:AsymmetricProperty", "owl:ObjectProperty", "owl:IrreflexiveProperty" ],
+    "domainIncludes" : "sosa:ObservableProperty",
+    "rangeIncludes" : "sosa:Sensor",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an ObservableProperty and the Sensor able to observe it."
+    },
+    "domain" : "sosa:ObservableProperty",
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is observed by"
+    },
+    "range" : "sosa:Sensor",
+    "equivalentProperty" : "_:b12",
+    "inverseOf" : "sosa:observes",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an ObservableProperty and the Sensor able to observe it."
+    }
+  }, {
+    "@id" : "sosa:madeActuation",
+    "@type" : [ "owl:InverseFunctionalProperty", "owl:IrreflexiveProperty", "owl:AsymmetricProperty", "owl:ObjectProperty" ],
+    "domainIncludes" : "sosa:Actuator",
+    "rangeIncludes" : "sosa:Actuation",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuator and the Actuation it has made."
+    },
+    "domain" : "sosa:Actuator",
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "made actuation"
+    },
+    "range" : "sosa:Actuation",
+    "equivalentProperty" : "_:b28",
+    "inverseOf" : "sosa:madeByActuator",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuator and the Actuation it has made."
+    }
+  }, {
+    "@id" : "sosa:madeByActuator",
+    "@type" : [ "owl:AsymmetricProperty", "owl:FunctionalProperty", "owl:ObjectProperty", "owl:IrreflexiveProperty" ],
+    "domainIncludes" : "sosa:Actuation",
+    "rangeIncludes" : "sosa:Actuator",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Actuation to the Actuator that made that Actuation."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "made by actuator"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Actuation to the Actuator that made that Actuation."
+    }
+  }, {
+    "@id" : "sosa:madeBySensor",
+    "@type" : [ "owl:FunctionalProperty", "owl:AsymmetricProperty", "owl:IrreflexiveProperty", "owl:ObjectProperty" ],
+    "domainIncludes" : "sosa:Observation",
+    "rangeIncludes" : "sosa:Sensor",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an Observation and the Sensor which made the Observation."
+    },
+    "domain" : "sosa:Observation",
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "made by sensor"
+    },
+    "range" : "sosa:Sensor",
+    "equivalentProperty" : "_:b5",
+    "inverseOf" : "sosa:madeObservation",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an Observation and the Sensor which made the Observation."
+    }
+  }, {
+    "@id" : "sosa:madeObservation",
+    "@type" : [ "owl:InverseFunctionalProperty", "owl:ObjectProperty", "owl:AsymmetricProperty", "owl:IrreflexiveProperty" ],
+    "domainIncludes" : "sosa:Sensor",
+    "rangeIncludes" : "sosa:Observation",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor and an Observation made by the Sensor."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "made observation"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor and an Observation made by the Sensor."
+    }
+  }, {
+    "@id" : "sosa:observedProperty",
+    "@type" : [ "owl:ObjectProperty", "owl:IrreflexiveProperty", "owl:FunctionalProperty", "owl:AsymmetricProperty" ],
+    "domainIncludes" : "sosa:Observation",
+    "rangeIncludes" : "sosa:ObservableProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."
+    },
+    "domain" : "sosa:Observation",
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "observed property"
+    },
+    "range" : "sosa:ObservableProperty",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."
+    }
+  }, {
+    "@id" : "sosa:observes",
+    "@type" : [ "owl:ObjectProperty", "owl:IrreflexiveProperty", "owl:AsymmetricProperty" ],
+    "domainIncludes" : "sosa:Sensor",
+    "rangeIncludes" : "sosa:ObservableProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "observes"
+    },
+    "subPropertyOf" : "ssn:forProperty",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing."
+    }
+  }, {
+    "@id" : "sosa:resultTime",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "domainIncludes" : [ "sosa:Observation", "sosa:Actuation" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/sosa/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "result time"
+    },
+    "range" : "xsd:dateTime",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."
+    }
+  }, {
+    "@id" : "ssn:Property",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/ssn/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Property"
+    },
+    "subClassOf" : "_:b32",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."
+    }
+  }, {
+    "@id" : "ssn:System",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/ssn/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "System"
+    },
+    "subClassOf" : [ "_:b47", "_:b13" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."
+    }
+  }, {
+    "@id" : "ssn:forProperty",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A relation between some aspect of an entity and a Property."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/ssn/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "for property"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A relation between some aspect of an entity and a Property."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "For example, from a Sensor to the properties it can observe; from an Actuator to the properties it can act on; from a Deployment to the properties it was installed to observe or act on; from a SystemCapability to the Property the capability is described for."
+    }
+  }, {
+    "@id" : "ssn:hasProperty",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:AsymmetricProperty", "owl:ObjectProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an entity and a Property of that entity."
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/ssn/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has property"
+    },
+    "equivalentProperty" : "_:b27",
+    "inverseOf" : "ssn:isPropertyOf",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an entity and a Property of that entity."
+    }
+  }, {
+    "@id" : "ssn:isPropertyOf",
+    "@type" : [ "owl:IrreflexiveProperty", "owl:AsymmetricProperty", "owl:ObjectProperty" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Property and the entity it belongs to."
+    },
+    "domain" : "ssn:Property",
+    "isDefinedBy" : "http://www.w3.org/ns/ssn/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is property of"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Property and the entity it belongs to."
+    }
+  } ],
+  "@context" : {
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "rangeIncludes" : {
+      "@id" : "http://schema.org/rangeIncludes",
+      "@type" : "@id"
+    },
+    "domainIncludes" : {
+      "@id" : "http://schema.org/domainIncludes",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "equivalentProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#equivalentProperty",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
+      "@type" : "@id"
+    },
+    "equivalentClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#equivalentClass",
+      "@type" : "@id"
+    },
+    "propertyDisjointWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#propertyDisjointWith",
+      "@type" : "@id"
+    },
+    "minCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#minCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "disjointWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#disjointWith",
+      "@type" : "@id"
+    },
+    "cardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#cardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "intersectionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#intersectionOf",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "onClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onClass",
+      "@type" : "@id"
+    },
+    "qualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "@vocab" : "http://www.semanticweb.org/decentralized-context-aware-ontology/",
+    "schema" : "http://schema.org/",
+    "decas" : "http://www.semanticweb.org/decentralized-context-aware-ontology#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "swrl" : "http://www.w3.org/2003/11/swrl#",
+    "swrlb" : "http://www.w3.org/2003/11/swrlb#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "ssn" : "http://www.w3.org/ns/ssn/",
+    "swrla" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#",
+    "geo" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "terms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/",
+    "sosa" : "http://www.w3.org/ns/sosa/"
+  }
+}
