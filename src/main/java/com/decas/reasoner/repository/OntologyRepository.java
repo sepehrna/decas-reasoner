@@ -15,6 +15,8 @@ public interface OntologyRepository {
 
     void persist() throws IOException;
 
+    QueryResult executeSimpleQuery(String queryString);
+
     Map<String, List<SosaIndividual>> executeQuery(String queryString);
 
     void insertIndividual(String individualId, String type, String label, String definition, String comment, Map<String, String> characteristics);

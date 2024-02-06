@@ -34,7 +34,7 @@ public class DecasOntologyRepositoryImpl implements OntologyRepository {
         String ontologyFile = "src/main/resources/generated-ontology.owl";
         File file = new File(ontologyFile);
         if (!file.exists()) {
-            ontologyFile = "src/main/resources/decas-ontology-raw.owl";
+            ontologyFile = "D:\\PArea\\Intellij\\decas\\decas-reasoner\\src\\main\\resources\\decas-ontology.owl";
         }
         ontology = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC);
         FileInputStream fileInputStream = new FileInputStream(ontologyFile);
@@ -53,7 +53,7 @@ public class DecasOntologyRepositoryImpl implements OntologyRepository {
     }
 
     public void persist() throws IOException {
-        String persistingFile = "src/main/resources/generated-ontology.jsonld";
+        String persistingFile = "src/main/resources/generated-ontology.owl";
         FileOutputStream fileOutputStream;
         try {
             fileOutputStream = new FileOutputStream(persistingFile);
@@ -64,7 +64,7 @@ public class DecasOntologyRepositoryImpl implements OntologyRepository {
             }
             fileOutputStream = new FileOutputStream(newFile);
         }
-        ontology.write(fileOutputStream, "JSON-LD", "http://www.semanticweb.org/decentralized-context-aware-ontology");
+        ontology.write(fileOutputStream, "RDF/XML", "http://www.semanticweb.org/decentralized-context-aware-ontology");
         ontology.close();
         fileOutputStream.close();
     }
@@ -90,6 +90,43 @@ public class DecasOntologyRepositoryImpl implements OntologyRepository {
         newIndividual.addProperty(definitionProperty,
                 ontology.createLiteral(definition, "en"));
 
+    }
+    public QueryResult executeSimpleQuery(String queryString) {
+        Query query = QueryFactory.create(prefixes + " " + queryString);
+        QueryExecution qe = QueryExecutionFactory.create(query, ontology);
+        ResultSet results = qe.execSelect();
+        List<String> vars = results.getResultVars();
+        List<List<String>> rows = new ArrayList<>();
+
+        while (results.hasNext()) {
+            QuerySolution qs = results.nextSolution();
+            List<String> row = new ArrayList<>();
+            for (String var: vars) {
+                RDFNode node = qs.get(var);
+
+                if (node.isResource()) {
+                    Resource res = node.asResource();
+                    StmtIterator labels = res.listProperties(RDFS.label);
+
+                    while (labels.hasNext()) {
+                        Literal lit = labels.nextStatement().getObject().asLiteral();
+                        if (lit.getLanguage().equals("en")) {
+                            row.add(lit.getString());
+                            break;
+                        }
+                    }
+                } else {
+                    Literal lit = node.asLiteral();
+                    row.add(lit.getString());
+                }
+            }
+
+            rows.add(row);
+        }
+
+        qe.close();
+
+        return new QueryResult(vars, rows);
     }
 
     public Map<String, List<SosaIndividual>> executeQuery(String queryString) {
